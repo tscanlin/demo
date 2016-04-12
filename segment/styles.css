@@ -153,11 +153,10 @@ a, .link-style {
 }
 
 .page-heading {
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 60px;
-  margin-bottom: 10px;
-  margin-top: 0;
+  margin: 0;
 }
 .subtitle {
   margin: 10px auto;
@@ -285,7 +284,6 @@ a, .link-style {
 
 .title {
   font-size: 20px;
-  color: #54585E;
   line-height: 24px;
   margin-bottom: 10px;
   font-weight: 600;
@@ -303,10 +301,31 @@ a, .link-style {
   State
 */
 
+.pill-option--monthly {
+  border: 1px solid #3CC76A;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.07);
+  color: #3CC76A;
+  pointer-events: none;
+}
+#pricing-table-period-toggle:checked ~ .pills .pill-option--annual {
+  border: 1px solid #3CC76A;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.07);
+  color: #3CC76A;
+  pointer-events: none;
+}
+#pricing-table-period-toggle:checked ~ .pills .pill-option--monthly {
+  border: 1px solid #E3E4E6;
+  box-shadow: none;
+  color: inherit;
+  pointer-events: auto;
+}
+
 [data-period="annual"] {
   display: none;
 }
-
-#pricing-table-period-toggle {
-
+#pricing-table-period-toggle:checked ~ .pricing-table-wrapper [data-period="annual"] {
+  display: block;
+}
+#pricing-table-period-toggle:checked ~ .pricing-table-wrapper [data-period="monthly"] {
+  display: none;
 }
