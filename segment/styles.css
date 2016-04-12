@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Freight Sans';
+    src: url(fonts/freight-sans/woff2/freight-sans-light.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light.woff) format('woff');
+    font-style: normal;
+    font-weight: 200
+}
+
+@font-face {
+    font-family: 'Freight Sans';
+    src: url(fonts/freight-sans/woff2/freight-sans-light-italic.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light-italic.woff) format('woff');
+    font-style: italic;
+    font-weight: 200
+}
+
+@font-face {
+    font-family: 'Freight Sans Small Caps';
+    src: url(fonts/freight-sans/woff2/freight-sans-light-small-caps.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light-small-caps.woff) format('woff');
+    font-style: normal;
+    font-weight: 200
+}
+
+@font-face {
+    font-family: 'Freight Sans';
+    src: url(fonts/freight-sans/woff2/freight-sans-book.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-book.woff) format('woff');
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: 'Freight Sans';
+    src: url(fonts/freight-sans/woff2/freight-sans-book-italic.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-book-italic.woff) format('woff');
+    font-style: italic;
+    font-weight: 400
+}
+
+html {
+  font-family: 'Freight Sans',Verdana,Geneva,sans-serif;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: center center no-repeat;
+}
+.integration-icon {
+  background-image: url(icons/integrations.svg);
+}
+
+.center {
+  text-align: center;
+}
+
+.position--relative {
+  position: relative;
+}
+
+.title {
+
+}
