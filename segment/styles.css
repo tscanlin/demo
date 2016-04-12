@@ -297,6 +297,32 @@ a, .link-style {
   margin: 5px auto;
 }
 
+.arrow-link {
+  color: #3CC76A;
+  font-size: 18px;
+  padding-right: 15px;
+  position: relative;
+  font-weight: 500;
+}
+.arrow-link::after {
+  content: '';
+  display: block;
+  height: 9px;
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.leaf-icon::after {
+  background: url(icons/leaf.svg) top right no-repeat;
+}
+.arrow-icon::after {
+  background: url(icons/arrow.svg) top right no-repeat;
+}
+
+
 /*
   State
 */
