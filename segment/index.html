@@ -4,124 +4,142 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
+    <main class="page">
       <section class="center">
-        <span class="icon integration-icon"></span>
-        <h2 class="title">Integrations Plans</h2>
+        <span class="icon integration-icon margin-top--30"></span>
+        <h2 class="page-heading">Integrations Plans</h2>
         <p class="subtitle">Send your data to over 100 apps with the flip of a switch.</p>
-        <div>
+        <div class="">
           <a href="#">Learn more about integrations</a>
         </div>
 
-        <div>
-          <label>Monthly</label>
-          <label>Annual</label>
+        <input type="checkbox" id="pricing-table-period-toggle" class="hidden">
+        <div class="margin-top--30">
+          <label class="pill-option pill-option--monthly inline-block cursor--pointer" for="pricing-table-period-toggle">
+            Monthly
+          </label>
+          <label class="pill-option pill-option--annual inline-block cursor--pointer" for="pricing-table-period-toggle">
+            Annual
+          </label>
         </div>
 
-        <div class="position--relative">
-          <div class="pricing-table-labels"></div>
+        <div class="pricing-table-wrapper">
+          <div class="pricing-table-labels">
+            <label class="block">API Calls per month</label>
+            <label class="block">Integrations</label>
+          </div>
           <div class="pricing-table border--light box-shadow--light">
-            <div class="inline-block pricing-column">
-              <div class="pricing-doughtnut 0--4"></div>
-              <div class="pricing-plan-name">
-                Developer
-              </div>
-              <div>
-                50,000
-              </div>
-              <div class="link-style">
-                Developer
-              </div>
-              <div class="plan-amount">
+            <div class="pricing-column">
+              <div class="pricing-doughtnut"></div>
+              <div class="pricing-details">
+                <div class="pricing-plan-name">
+                  Developer
+                </div>
                 <div>
-                  <div class="plan-price">Free</div>
+                  50,000
+                </div>
+                <div class="link-style cursor--pointer">
+                  Developer
+                </div>
+                <div class="plan-amount">
+                  <div>
+                    <div class="plan-price">Free</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="inline-block pricing-column">
-              <div class="pricing-doughtnut 0--4"></div>
-              <div class="pricing-plan-name">
-                Project
-              </div>
-              <div>
-                1 Million
-              </div>
-              <div class="link-style">
-                Project
-              </div>
-              <div class="plan-amount">
-                <div data-period="monthly">
-                  <div class="plan-price">$39</div>
-                  <div class="plan-period">per month</div>
+            <div class="pricing-column">
+              <div class="pricing-doughtnut doughtnut--1"></div>
+              <div class="pricing-details">
+                <div class="pricing-plan-name">
+                  Project
                 </div>
-                <div data-period="annual">
-                  <div class="plan-price">$421</div>
-                  <div class="plan-period">Save 10%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="inline-block pricing-column">
-              <div class="pricing-doughtnut 0--4"></div>
-              <div class="pricing-plan-name">
-                Startup
-              </div>
-              <div>
-                5 Million
-              </div>
-              <div class="link-style">
-                Startup
-              </div>
-              <div class="plan-amount">
-                <div data-period="monthly">
-                  <div class="plan-price">$39</div>
-                  <div class="plan-period">per month</div>
-                </div>
-                <div data-period="annual">
-                  <div class="plan-price">$421</div>
-                  <div class="plan-period">Save 10%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="inline-block pricing-column">
-              <div class="pricing-doughtnut 0--4"></div>
-              <div class="pricing-plan-name">
-                Growth
-              </div>
-              <div>
-                1 Million
-              </div>
-              <div class="link-style">
-                Growth
-              </div>
-              <div class="plan-amount">
-                <div data-period="monthly">
-                  <div class="plan-price">$39</div>
-                  <div class="plan-period">per month</div>
-                </div>
-                <div data-period="annual">
-                  <div class="plan-price">$421</div>
-                  <div class="plan-period">Save 10%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="inline-block pricing-column">
-              <div class="pricing-doughtnut 0--4"></div>
-              <div class="pricing-plan-name">
-                Business
-              </div>
-              <div>
-                Unlimited
-              </div>
-              <div class="link-style">
-                Business
-              </div>
-              <div class="plan-amount">
                 <div>
-                  <div>Contact</div>
+                  1 Million
+                </div>
+                <div class="link-style cursor--pointer">
+                  Project
+                </div>
+                <div class="plan-amount">
+                  <div data-period="monthly">
+                    <div class="plan-price">$39</div>
+                    <div class="plan-period">per month</div>
+                  </div>
+                  <div data-period="annual">
+                    <div class="plan-price">$421</div>
+                    <div class="plan-period">Save 10%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-column">
+              <div class="pricing-doughtnut doughtnut--2"></div>
+              <div class="pricing-details">
+                <div class="pricing-plan-name">
+                  Startup
+                </div>
+                <div>
+                  5 Million
+                </div>
+                <div class="link-style cursor--pointer">
+                  Startup
+                </div>
+                <div class="plan-amount">
+                  <div data-period="monthly">
+                    <div class="plan-price">$99</div>
+                    <div class="plan-period">per month</div>
+                  </div>
+                  <div data-period="annual">
+                    <div class="plan-price">$1,069</div>
+                    <div class="plan-period">Save 10%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-column">
+              <div class="pricing-doughtnut doughtnut--3"></div>
+              <div class="pricing-details">
+                <div class="pricing-plan-name">
+                  Growth
+                </div>
+                <div>
+                  25 Million
+                </div>
+                <div class="link-style cursor--pointer">
+                  Growth
+                </div>
+                <div class="plan-amount">
+                  <div data-period="monthly">
+                    <div class="plan-price">$449</div>
+                    <div class="plan-period">per month</div>
+                  </div>
+                  <div data-period="annual">
+                    <div class="plan-price">$4,849</div>
+                    <div class="plan-period">Save 10%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-column">
+              <div class="pricing-doughtnut doughtnut--4"></div>
+              <div class="pricing-details">
+                <div class="pricing-plan-name">
+                  Business
+                </div>
+                <div>
+                  Unlimited
+                </div>
+                <div class="link-style cursor--pointer">
+                  Business
+                </div>
+                <div class="plan-amount">
+                  <div>
+                    <div class="button">Contact</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,8 +147,8 @@
         </div>
 
         <div>
-          <h3>What's the Business plan?</h3>
-          <p>You get unlimited API calls and storage, the ability to replay historic data into tools, a dedicated Success team member, an SLA, and more!</p>
+          <h3 class="title">What's the Business plan?</h3>
+          <p class="tagline">You get unlimited API calls and storage, the ability to replay historic data into tools, a dedicated Success team member, an SLA, and more!</p>
           <a href="#">Learn more</a>
         </div>
       </section>

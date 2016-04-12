@@ -1,44 +1,119 @@
+/*
+  Fonts
+*/
+
 @font-face {
-    font-family: 'Freight Sans';
-    src: url(fonts/freight-sans/woff2/freight-sans-light.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light.woff) format('woff');
-    font-style: normal;
-    font-weight: 200
+  font-family: 'Freight Sans';
+  src: url(fonts/freight-sans-light.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light.woff) format('woff');
+  font-style: normal;
+  font-weight: 200
 }
 
 @font-face {
-    font-family: 'Freight Sans';
-    src: url(fonts/freight-sans/woff2/freight-sans-light-italic.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light-italic.woff) format('woff');
-    font-style: italic;
-    font-weight: 200
+  font-family: 'Freight Sans';
+  src: url(fonts/freight-sans-light-italic.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light-italic.woff) format('woff');
+  font-style: italic;
+  font-weight: 200
 }
 
 @font-face {
-    font-family: 'Freight Sans Small Caps';
-    src: url(fonts/freight-sans/woff2/freight-sans-light-small-caps.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light-small-caps.woff) format('woff');
-    font-style: normal;
-    font-weight: 200
+  font-family: 'Freight Sans Small Caps';
+  src: url(fonts/freight-sans-book-small-caps.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-light-small-caps.woff) format('woff');
+  font-style: normal;
+  font-weight: 200
 }
 
 @font-face {
-    font-family: 'Freight Sans';
-    src: url(fonts/freight-sans/woff2/freight-sans-book.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-book.woff) format('woff');
-    font-style: normal;
-    font-weight: 400
+  font-family: 'Freight Sans';
+  src: url(fonts/freight-sans-book.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-book.woff) format('woff');
+  font-style: normal;
+  font-weight: 400
 }
 
 @font-face {
-    font-family: 'Freight Sans';
-    src: url(fonts/freight-sans/woff2/freight-sans-book-italic.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-book-italic.woff) format('woff');
-    font-style: italic;
-    font-weight: 400
+  font-family: 'Freight Sans';
+  src: url(fonts/freight-sans-book-italic.woff2) format('woff2'),url(fonts/freight-sans/woff/freight-sans-book-italic.woff) format('woff');
+  font-style: italic;
+  font-weight: 400
 }
+
+
+/*
+  Base
+*/
 
 html {
   font-family: 'Freight Sans',Verdana,Geneva,sans-serif;
+  /*color: #54585E;*/
+  color: #8F9195;
+  font-size: 18px;
+  line-height: 27px;
+  box-sizing: border-box;
 }
 
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a, .link-style {
+  display: inline-block;
+  color: #3CC76A;
+  text-decoration: underline;
+}
+
+
+/*
+  Helpers
+*/
+
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
+}
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.cursor--pointer {
+  cursor: pointer;
+}
+
+.position--relative {
+  position: relative;
+}
+
+.border--light {
+  border: 1px solid #E3E4E6;
+}
+.box-shadow--light {
+  box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+}
+
+.margin-top--30 {
+  margin-top: 30px;
+}
+
+
+/*
+  Page
+*/
+
+.page {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .icon {
@@ -51,14 +126,187 @@ html {
   background-image: url(icons/integrations.svg);
 }
 
-.center {
-  text-align: center;
+.pill-option {
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 25px;
+  margin: 0 2px;
+  padding: 3px 20px 4px;
+  border: 1px solid #E3E4E6;
+}
+.pill-option:hover {
+  border: 1px solid #3CC76A;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.07);
+  color: #3CC76A;
 }
 
-.position--relative {
+.button {
+  font-family: 'Freight Sans Small Caps',Verdana,Geneva,sans-serif;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: #3CC76A;
+  line-height: 1;
+  border-radius: 4px;
+  border: 2px solid currentColor;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.page-heading {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.subtitle {
+  margin: 10px auto;
+  max-width: 700px;
+  color: #54585E;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.pricing-table-wrapper {
+  width: 800px;
+  margin: 30px auto;
   position: relative;
 }
 
+.pricing-table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricing-table-labels {
+  position: absolute;
+  max-width: 145px;
+  left: -150px;
+  text-align: right;
+  top: 151px;
+}
+
+.pricing-table-labels > .block {
+  margin-top: 30px;
+}
+
+.pricing-column {
+  margin: 0 0 55px;
+  padding: 25px 25px 0;
+  position: relative;
+  text-align: center;
+
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.pricing-column::after {
+  content: '';
+  width: 0px;
+  height: 70%;
+  position: absolute;
+  right: 0;
+  top: 110px;
+  border-right: 1px solid #E3E4E6;
+}
+.pricing-column:last-child::after {
+  content: auto;
+  border-color: transparent;
+}
+
+.pricing-doughtnut {
+  border-width: 20px;
+  border-style: solid;
+  border-color: #E9E9E9;
+  border-radius: 50%;
+  margin: 30px auto 0;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  transform: rotate(-45deg);
+}
+.doughtnut--1 {
+  border-bottom-color: #3CC76A;
+}
+.doughtnut--2 {
+  border-right-color: #3CC76A;
+  border-bottom-color: #3CC76A;
+}
+.doughtnut--3 {
+  border-right-color: #3CC76A;
+  border-bottom-color: #3CC76A;
+  border-top-color: #3CC76A;
+}
+.doughtnut--4 {
+  border-color: #3CC76A;
+}
+.pricing-doughtnut::after {
+  background-color: white;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -9px;
+  height: 18px;
+  width: 18px;
+}
+
+.pricing-details > div {
+  margin-top: 30px;
+}
+
+.pricing-plan-name {
+  font-family: 'Freight Sans Small Caps',Verdana,Geneva,sans-serif;
+  text-transform: lowercase;
+  color: #665F57;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.plan-price {
+  color: #54585E;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.plan-period {
+  color: #B7BDC4;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
 .title {
+  font-size: 20px;
+  color: #54585E;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.tagline {
+  font: 400 16px/21px 'Freight Sans',Verdana,Geneva,sans-serif;
+  color: #54585E;
+  width: 480px;
+  margin: 5px auto;
+}
+
+/*
+  State
+*/
+
+[data-period="annual"] {
+  display: none;
+}
+
+#pricing-table-period-toggle {
 
 }
